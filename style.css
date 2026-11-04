@@ -1,0 +1,231 @@
+/* საწყისი სტილები */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0b0b16;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.header {
+    background-color: #151525;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #7045ff;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #8b5cf6;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    color: #8b5cf6;
+}
+.hero {
+    min-height: 400px;
+    background: linear-gradient(135deg, #17172e, #30205c);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 30px auto;
+    border-radius: 16px;
+}
+
+.hero-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    color: #a78bfa;
+    font-size: 42px;
+}
+
+.hero p {
+    color: #dddddd;
+    margin-bottom: 25px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #7045ff;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: 2px solid #7045ff;
+}
+
+.hero-btn:hover {
+    background-color: transparent;
+}.games {
+    padding: 40px 20px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.games h2 {
+    color: #a78bfa;
+    margin-bottom: 35px;
+}.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}.card {
+    background-color: #19192d;
+    width: 300px;
+    padding: 25px;
+    margin: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #7045ff;
+    border-radius: 14px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    flex-basis: 250px;
+    flex-shrink: 1;
+}
+
+.card h3 {
+    color: #a78bfa;
+}
+
+.card p {
+    color: #cccccc;
+}
+
+.card a {
+    display: inline-block;
+    background-color: #7045ff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 7px;
+    text-decoration: none;
+    text-align: center;
+}.card--featured {
+    flex-grow: 2;
+    flex-basis: 220px;
+    align-self: center;
+    order: -1;
+}
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    background-color: #151525;
+    padding: 35px;
+    margin: 40px auto;
+    border: 2px solid #7045ff;
+    border-radius: 15px;
+}
+
+.about-text {
+    flex: 2;
+}
+
+.about-info {
+    flex: 1;
+    background-color: #24213d;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+.about h2 {
+    color: #a78bfa;
+}
+
+.about h3 {
+    color: #a78bfa;
+}.footer {
+    background-color: #151525;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border-top: 2px solid #7045ff;
+}
+
+.footer h3 {
+    color: #a78bfa;
+}
+
+.footer p {
+    color: #bbbbbb;
+}@media (max-width: 700px) {
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+}
